@@ -3,10 +3,6 @@ window.addEventListener("DOMContentLoaded", onLoad, false);
 
 window.requestAnimationFrame =
   window.requestAnimationFrame ||
-  window.webkitRequestAnimationFrame ||
-  window.mozRequestAnimationFrame ||
-  window.oRequestAnimationFrame ||
-  window.msRequestAnimationFrame ||
   function (callback) {
     window.setTimeout(callback, 1000 / 60);
   };
